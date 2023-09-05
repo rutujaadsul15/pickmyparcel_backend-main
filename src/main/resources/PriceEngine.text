@@ -1,0 +1,14 @@
+1 to 1000 gms      : 1 to 30 Kms    : 70 Rs
+1001 to 3000 gms  : 1 to 30 Kms    : 90 Rs
+3001 to 5000 gms  : 1 to 30 Kms    : 100 Rs
+5001 to 10000 gms : 1 to 30 Kms    : 300 Rs
+
+1 to 1000 gms       : 31 to 200 Kms : 120 Rs
+1001 to 3000 gms   : 31 to 200 Kms : 150 Rs
+3001 to 5000 gms   : 31 to 200 Kms : 200 Rs
+50001 to 10000 gms : 31 to 200 Kms : 500 Rs
+
+1 to 1000 gms      : 201 to 500 Kms : 150 Rs
+1001 to 3000 gms  : 201 to 500 Kms : 200 Rs
+3001 to 5000 gms  : 201 to 500 Kms : 250 Rs
+5001 to 10000 gms : 201 to 500 Kms : 700 Rs
