@@ -1,5 +1,6 @@
 package com.company.pickmyparcel.model;
 
+import com.company.pickmyparcel.model.response.FrequencyTripStatus;
 import lombok.*;
 
 import javax.persistence.*;
@@ -67,6 +68,8 @@ public class FutureTrip {
     private String carrierContactNo;
     private String carrierFirstName;
     private String carrierLastName;
+
+    private FrequencyTripStatus tripFrequency;
 
 
 }

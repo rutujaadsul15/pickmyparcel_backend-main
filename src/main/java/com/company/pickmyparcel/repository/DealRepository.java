@@ -20,7 +20,12 @@ public interface DealRepository extends JpaRepository<Deal, Integer> {
     List<Deal> findByPickUpLocation_PinCodeInAndDropLocation_PinCodeInAndParcel_ParcelStatusInAndDealPaymentStatus(
             Set<String> pickUpPinCode, Set<String> dropPinCode, List<ParcelStatus> parcelStatuses, DealPaymentStatus dealPaymentStatus);
     List<Deal> findByPickUpLocation_PinCodeAndDropLocation_PinCode(String pickUpPinCode, String dropPinCode);
-    @Query("SELECT d FROM Deal d WHERE DATE_FORMAT(d.date, '%Y-%m-%d') = :formattedDate")
+  /*  @Query("SELECT * FROM Deal d WHERE DATE(date_column) = '2023-08-15';\n")
+
+    List<DealAndPaymentResponse> findDealsByDate(@Param("formattedDate") String formattedDate);*/
+
+    @Query("SELECT d FROM Deal d WHERE d.date = :formattedDate")
     List<DealAndPaymentResponse> findDealsByDate(@Param("formattedDate") String formattedDate);
+
 }
 
